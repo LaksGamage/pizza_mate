@@ -11,7 +11,7 @@
     <body>
         <div class="bg-red-600 p-[30] pr-[60] pl-[60] flex justify-between  ">
             
-            <p class="logo text-5xl ">Pizza Mate</p>
+            <a href="index.php"><p class="logo text-5xl ">Pizza Mate</p></a>
            <button class="button bg-white rounded-full rounded-xl p-[15] hover:bg-black hover:text-white shadow-2xl  "> <a href="addpizza.php">Add Pizza</a></button>
             
 

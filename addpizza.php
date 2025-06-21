@@ -14,6 +14,31 @@ include("header.php");
 
 ?>
 
+<?php
+include("config/db_connect.php");
+
+
+if(isset($_POST['submit'])){
+
+    $title = mysqli_real_escape_string($conn, $_POST['title']);
+    $email = mysqli_real_escape_string($conn, $_POST['email']);
+    $ingredients = mysqli_real_escape_string($conn, $_POST['ingredients']);
+    
+    $sql = "INSERT INTO pizza(title,email,Ingredients) VALUES('$title','$email','$ingredients')";
+    
+    if(mysqli_query($conn, $sql)){
+        header('Location: index.php');
+
+    }else {
+        echo 'query error: '. mysqli_error($conn);
+    }
+}
+
+
+
+
+
+?>
 
 
 
