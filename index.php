@@ -35,19 +35,20 @@ mysqli_close($conn);
     <title>Pizza mart</title>
 </head>
 
-<body>
+<body class="bg-top-right bg-[url(images/b5.jpg)]">
     <?php
     include("header.php");
     ?>
 
     <div>
         <div class="mx-60 my-20 " >
-            <p class="add text-center mb-10 text-[40px]">Pizza orders</p>
+            <p class="add text-center mb-10 text-[40px] shadow-2xl">Pizza orders</p>
             <div class="grid grid-cols-3 gap-4">
                 <?php foreach($pizzas as $pizza) { ?>
                     <div class="button bg-[#f7a305ff] border border-black rounded-xl shadow-2xl text-[18px] text-center p-10  font-bold">
                         <div class="bg-[white] mx-6 "><h5 class="text-[black]  underline mb-3"><?php echo htmlspecialchars($pizza['title']) ?></h5></div>
-                        <div>
+                        
+                        <div class="bg-[#f7af4aff] shadow-xl  border border-white mb-2 text-center">
                         <h5 class="text-[black]"><?php echo htmlspecialchars($pizza['Ingredients']) ?></h5>
                         <h5 class="text-[#303030ff] mb-5"><?php echo htmlspecialchars($pizza['email']) ?></h5>
                         </div>

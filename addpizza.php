@@ -7,7 +7,7 @@
 
     </head>
 
-<body>
+<body class="bg-top-right bg-[url(images/b5.jpg)]">
     
     <?php
 include("header.php");
@@ -42,7 +42,7 @@ if(isset($_POST['submit'])){
 
 
 
-<p class="add text-[40px] text-4xl text-center m-[40]">Add a Pizza</p>
+<p class="add text-[40px] text-white text-4xl text-center m-[40]">Add a Pizza</p>
 
 
 <form class="button text-black flex flex-col bg-[#f7a305ff] p-4 mb-50 my-[50px] mx-[400px] rounded-xl text-[30px] border border-black shadow-2xl" action="addpizza.php" method="POST">
